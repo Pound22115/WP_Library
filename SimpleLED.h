@@ -1,10 +1,7 @@
 #ifndef SimpleLED_h
 #define SimpleLED_h
-
 #include "Arduino.h"
 
-void initSimpleLED(int pin);
-void LED_ON();
-void LED_OFF();
+void LED(int led_num,int action) ;
 
 #endif

@@ -1,12 +1,13 @@
 #include "SimpleLED.h"
 #include <Arduino.h>
 
-void LED_ON() {
+void LED(int led_num,int action) {
+
+if(led_num == 1)
+{
   pinMode(2, OUTPUT);
-  digitalWrite(2, HIGH);
+  digitalWrite(2, action);
 }
 
-void LED_OFF() {
-  pinMode(2, OUTPUT);
-  digitalWrite(2, LOW);
+  
 }
